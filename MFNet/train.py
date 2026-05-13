@@ -50,7 +50,7 @@ parser.add_argument('--background', default=255, type=int, help='the ignore labe
 # Network Config
 backbone = "mit_b4"
 parser.add_argument('--backbone', default=backbone, type=str, help='the backbone network to load')
-parser.add_argument('--pretrained_backbone', default="./checkpoints/pretrained/mit_b4.pth", type=str, help='corresponding to backbone')
+parser.add_argument('--pretrained_backbone', default="./checkpoints/pretrained/pytorch_model.bin", type=str, help='corresponding to backbone')
 parser.add_argument('--decoder_embed_dim', default=512, type=int, help='')
 # Train Config
 parser.add_argument('--optimizer', default="AdamW", type=str, help='optimizer')
